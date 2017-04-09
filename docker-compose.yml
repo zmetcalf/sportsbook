@@ -1,0 +1,10 @@
+version: '2'
+services:
+  db:
+    ports:
+      - '5432:5432'
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=gopass
+      - POSTGRES_USER=gouser
+      - POSTGRES_DB=godb
